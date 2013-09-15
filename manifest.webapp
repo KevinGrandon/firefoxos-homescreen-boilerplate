@@ -1,0 +1,27 @@
+{
+  "name": "Home Boilerplate",
+  "description": "FirefoxOS Homescreen Boilerplate",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "role": "homescreen",
+  "developer": {
+    "name": "Kevin Grandon",
+    "url": "https://github.com/kevingrandon/"
+  },
+  "permissions": {
+    "webapps-manage":{}
+  },
+  "locales": {
+    "en-US": {
+      "name": "Home Boilerplate",
+      "description": "FirefoxOS Homescreen Boilerplate"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "30": "/style/icons/Blank.png"
+  },
+  "orientation": "portrait-primary",
+  "activities": {},
+  "messages": []
+}
