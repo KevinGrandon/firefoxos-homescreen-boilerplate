@@ -1,6 +1,6 @@
 # FirefoxOS Homescreen Boilerplate
 
-Boilerplate Homescreen app for FirefoxOS. This homescreen is a simple list of all installed applications. It is not complete as it does not yet support bookmarks, installation, and uninstallation.
+This homescreen is a simple list of all installed applications. It is not complete as it does not yet support bookmarks, installation, and uninstallation.
 
 ## Installation
 
