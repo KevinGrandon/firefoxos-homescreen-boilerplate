@@ -31,9 +31,7 @@
 	/**
 	 * Fetch all apps and render them.
 	 */
-	console.log('Fetching!')
 	FxosApps.all().then(icons => {
-		console.log('fetched ', icons.length)
 		icons.forEach(render);
 	});
 
