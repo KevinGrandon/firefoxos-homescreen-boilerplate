@@ -24,10 +24,14 @@
 		},
 
 		get icon() {
-			if (!this.descriptor.icons) {
+			var icons = this.descriptor.icons;
+			if (!icons) {
 				return '';
 			}
-			return this.descriptor.icons['60'];
+
+			for (var i in icons) {
+				return icons[i];
+			}
 		},
 
 		get descriptor() {
