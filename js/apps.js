@@ -3,6 +3,8 @@
 	// Apps container
 	var parent = document.getElementById('apps');
 
+	var iconMap = new WeakMap();
+
 	/**
 	 * Returns an icon for an element.
 	 * The element should have an entry point and origin in it's dataset.
@@ -22,10 +24,10 @@
 
 		var tile = document.createElement('div');
 		tile.className = 'tile';
-		tile.dataset.identifier = icon.identifier;
 		tile.style.backgroundImage = 'url(' + icon.icon + ')';
 
 		parent.appendChild(tile);
+		iconMap.set(tile, icon);
 	}
 
 	/**
@@ -39,9 +41,8 @@
 	 * Add an event listener to launch the app on click.
 	 */
 	window.addEventListener('click', function(e) {
-		var container = e.target
-		var icon = getIconByElement(container);
-		icon.launch();
+		console.log('FROM MAP:', iconMap.get(e.target).launch)
+		iconMap.get(e.target).launch();
 	});
 
 }());
