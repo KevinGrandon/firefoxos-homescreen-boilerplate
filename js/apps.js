@@ -6,15 +6,6 @@
 	var iconMap = new WeakMap();
 
 	/**
-	 * Returns an icon for an element.
-	 * The element should have an entry point and origin in it's dataset.
-	 */
-	function getIconByElement(element) {
-		var identifier = element.dataset.identifier;
-		return FxosApps.get(identifier);
-	}
-
-	/**
 	 * Renders the icon to the container.
 	 */
 	function render(icon) {
