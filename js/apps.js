@@ -20,7 +20,7 @@
 	function render(icon) {
 		var tile = document.createElement('div');
 		tile.className = 'tile';
-		tile.style.backgroundImage = 'url(' + icon.icon + ')';
+		tile.style.background = 'url(' + icon.icon + ') center/90% no-repeat';
 
 		parent.appendChild(tile);
 		iconMap.set(tile, icon);
