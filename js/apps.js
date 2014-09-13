@@ -18,10 +18,6 @@
 	 * Renders the icon to the container.
 	 */
 	function render(icon) {
-		if (!icon.icon) {
-			return;
-		}
-
 		var tile = document.createElement('div');
 		tile.className = 'tile';
 		tile.style.backgroundImage = 'url(' + icon.icon + ')';
@@ -41,7 +37,6 @@
 	 * Add an event listener to launch the app on click.
 	 */
 	window.addEventListener('click', function(e) {
-		console.log('FROM MAP:', iconMap.get(e.target).launch)
 		iconMap.get(e.target).launch();
 	});
 
