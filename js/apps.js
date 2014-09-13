@@ -27,7 +27,7 @@
 	/**
 	 * Add an event listener to launch the app on click.
 	 */
-	window.addEventListener('click', function(e) {
+	window.addEventListener('click', e => {
 		iconMap.get(e.target).launch();
 	});
 
